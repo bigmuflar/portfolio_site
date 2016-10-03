@@ -19,7 +19,6 @@
 
 /*PORTFOLIO*/
 #portfolio{
-    display: inline-block;
     padding: 50px;
     padding-left: 20%;
 }
@@ -108,6 +107,15 @@
     background: url('../images/Social_Sprites.png') -180px 45px;
 }
 
+/*BACK PHOTOS*/
+.symbol img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    z-index: -4;
+    padding: 12px;
+}
 
 /*MEDIA SCREENS*/
  @media only screen and (max-width: 240px) {

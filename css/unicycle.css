@@ -289,11 +289,11 @@ div[class*="spokeR"]{ z-index: 1;}
 span[class*="fork"]{
     position: absolute;
     width: 15px;
-    height: 40%;
+    height: 42%;
     background-color: dodgerblue;
-    /*! top: 50px; */
-    /*! left: 48.5%; */
     border-radius: 10%;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
 }
 .forkR{z-index: 2;}
 .forkL{z-index: -2;}
