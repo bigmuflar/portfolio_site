@@ -1,0 +1,41 @@
+/*
+	Starter styles (do not edit)
+*/
+
+body {
+	margin: 0;
+	background-color: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+}
+
+h2 {
+	margin-top: 0px;
+}
+
+.portfolio-item {
+	float: left;
+    left: 50%;
+	padding: 10px;
+    margin: auto;
+}
+
+.front, .back {
+	background: #FFF;
+	border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    border: 0.5px solid #FAFAFA;
+}
+
+.front {
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+}
+
+.back {
+	padding: 20px;
+	width: 160px;
+	height: 160px;
+}
+
