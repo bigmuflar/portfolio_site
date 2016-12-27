@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+#body-box {
+    position: absolute;
+    width: 100%;
+}
+
+#top {
+    text-align: center;
+    position: relative;
+}
+
+#top li {
+    left: -50%;
+    padding: none !important;
+}
+
+#top h1 {
+    font-size: 40px;
+}
+
+#portfolio {
+    margin: 0 auto;
+    display: block;
+    max-width: 725px;
+}
+
+
+/* SOCIAL MEDIA SPRITES */
+
+#social-sprites ul {
+    list-style: none;
+}
+
+#social-sprites {
+    position: relative;
+    height: 50px;
+    display: block;
+    clear: both;
+    padding-left: 0px;
+}
+
+#social-sprites li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    top: 0;
+    list-style-type: none;
+}
+
+#facebook {
+    left: 0px;
+    background: url('../images/Social_Sprites.png') 0 0;
+}
+
+#facebook:hover {
+    left: 0px;
+    background: url('../images/Social_Sprites.png') 0 45px;
+}
+
+#twitter {
+    left: 50px;
+    background: url('../images/Social_Sprites.png') -45px 0;
+}
+
+#twitter:hover {
+    left: 50px;
+    background: url('../images/Social_Sprites.png') -45px 45px;
+}
+
+#linkedin {
+    left: 100px;
+    background: url('../images/Social_Sprites.png') -90px 0;
+}
+
+#linkedin:hover {
+    left: 100px;
+    background: url('../images/Social_Sprites.png') -90px 45px;
+}
+
+#angellist {
+    left: 150px;
+    background: url('../images/Social_Sprites.png') -135px 0;
+}
+
+#angellist:hover {
+    left: 150px;
+    background: url('../images/Social_Sprites.png') -135px 45px;
+}
+
+#github {
+    left: 200px;
+    background: url('../images/Social_Sprites.png') -180px 0;
+}
+
+#github:hover {
+    left: 200px;
+    background: url('../images/Social_Sprites.png') -180px 45px;
+}
+
+
+/* FLIP Containers */
+
+.flip-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin: 0 auto;
+    float: left;
+    display: block;
+}
+
+.front, .back {
+    background: #FFF;
+    border-radius: 10px;
+}
+
+
+/*  UPDATED! flip the pane when hovered */
+
+.flip-container:hover .back {
+    transform: rotateY(0deg);
+}
+
+.flip-container:hover .front {
+    transform: rotateY(180deg);
+}
+
+
+/* flip speed goes here */
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+/* hide back of pane during swap */
+
+.front, .back {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*  UPDATED! front pane, placed above back */
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.front img {
+    margin: auto;
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(-180deg);
+    padding: 20px;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+
+/* MEDIA SCREENS */
+
+@media only screen and (max-width: 467px) {
+    #top {
+        text-align: center;
+    }
+    .flip-container {
+        margin: 0 auto;
+        float: none;
+    }
+}
+@media only screen and (max-width: 720px) and (min-width: 467px) {
+    #portfolio{
+      width: 500px;
+    }
+}
