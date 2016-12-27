@@ -23,8 +23,6 @@ h2 {
 .front, .back {
 	background: #FFF;
 	border-radius: 10px;
-    box-shadow: 10px 10px 5px #888888;
-    border: 0.5px solid #FAFAFA;
 }
 
 .front {
@@ -38,4 +36,3 @@ h2 {
 	width: 160px;
 	height: 160px;
 }
-
