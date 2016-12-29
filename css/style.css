@@ -9,6 +9,10 @@ h2 {
     margin-top: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 #body-box {
     position: absolute;
     width: 100%;
